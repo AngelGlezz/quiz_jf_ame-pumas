@@ -329,12 +329,12 @@ function finish_test(total){
 			text = encodeURIComponent("¡Por tus venas corre la sangre azul y oro! Puede que no te bañes seguido, pero nunca se había visto tanta fidelidad por un equipo desde que Pablo Barrera festejara besando el escudo de todos sus equipos");
 		}
 		
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/quiz-america-pumas");
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/de-quien-eres-aficionado-pumas-o-america");
 		window.open("https://twitter.com/share?text="+text+"&hashtags=JFQuiz&url="+url,"","width=500, height=300");
 	});
 
 	$("#indepth_facebook").click(function(){
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/quiz-america-pumas?m="+total);
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/de-quien-eres-aficionado-pumas-o-america?m="+total);
 		window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
 	});
 }

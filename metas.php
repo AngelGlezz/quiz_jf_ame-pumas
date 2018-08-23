@@ -1,17 +1,17 @@
 <?php
 	$metas = array(
-		0 => array(
-			"title" => "Here to Create",
+		"america" => array(
+			"title" => "¿Pumas o América?",
 			"description" => "!Eres un maestro del control! No lo esperaba. Te rifas tanto como Pogba",
 			"image" => "images/respuestas/america.jpg" 
 		),
-		1 => array(
-			"title" => "Here to Create",
+		"neutro" => array(
+			"title" => "¿Pumas o América?",
 			"description" => "Lo tuyo lo tuyo es hacer que lo imposible suceda. Messi te querría seguro en su equipo",
 			"image" => "images/respuestas/neutro.jpg" 
 		),
-		2 => array(
-			"title" => "Here to Create",
+		"pumas" => array(
+			"title" => "¿Pumas o América?",
 			"description" => "¡Un Luis Suáres en su máxima potencia! Corres, luchas, recuperas y metes goles, nadie te detiene.",
 			"image" => "images/respuestas/pumas.jpg" 
 		),
