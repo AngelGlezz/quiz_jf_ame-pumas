@@ -713,6 +713,12 @@
 	display: none;
 }
 
+/*  poner cuando sea quiz  */
+#mBanner{ display:none;}
+#mFooter{ display:none;}
+#mContentWide .articles{ display:none;}
+/*  poner cuando sea quiz  */
+
 @media screen and (min-width: 2341px) {
 	#indepth_footer .indepth_text{
 		text-align:left;
