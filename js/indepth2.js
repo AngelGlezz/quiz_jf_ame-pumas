@@ -61,11 +61,11 @@ $("#indepth_boton_empezar").on("click",function(){
 				          "tipo": "america"
 				        },
 				        {
-				          "respuesta": "Con cervezas y amigos",
+				          "respuesta": "¿Bañarse, eso qué es?",
 				          "tipo": "pumas"
 				        },
 				        {
-				          "respuesta": "Una buena comida",
+				          "respuesta": "Diario, no hay pretexto para no hacerlo",
 				          "tipo": "neutro"
 				        },
 				      ]
