@@ -430,6 +430,7 @@
 
 #indepth_pregunta_cont{
 	margin-top: 120px;
+	margin-bottom: 120px;
 }
 
 .indepth_pregunta_item{
@@ -522,20 +523,47 @@
 	font-style: italic;
 }
 
-#indepth_twittear{
+#container_result {
+	width: 100%;
+	height: 200px;
+	background-color: #1f2d3a;
+	color: #f1da88;
+	opacity: .7;
+	position: absolute;
+	bottom: 350px;
+}
+
+#social_media {
+	width: 110px;
+	margin: 0px auto;
+	overflow: auto;
+}
+
+#indepth_twittear {
 	width: 50px;
 	height: 50px;
 	background-image: url(../images/Twitter.png);
 	cursor: pointer;
+	background-size: contain;
+	float: right;
+}
+
+#indepth_facebook {
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/Facebook.png);
+	cursor: pointer;
 	margin: auto;
 	background-size: contain;
-	position: absolute;
-	left: 330px;
-	top: 190px;
+	float: left;
 }
 
 #indepth_twittear:hover{
-	opacity: .8;
+	opacity: .6;
+}
+
+#indepth_facebook:hover{
+	opacity: .6;
 }
 
 .indepth_pregunta_t{
@@ -568,7 +596,7 @@
 #indepth_resultados{
 	z-index: 2000;
 	top:0;
-	background-color: #a81d1f;
+	background-color: #1f2d3a;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -585,12 +613,8 @@
 	vertical-align: middle;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 29px;
-	position: absolute;
-	top: 400px;
 	opacity: 0.8;
 	padding: 10px;
-	background-color: #36333c;
-	color: #f1da88;
 }
 
 .indepth_result_title{
@@ -673,14 +697,20 @@
 
 .inner {
 	width: 82%;
-	height: 250px;
-	margin: auto;
-	position: relative;
+	height: 100%;
+	margin: 0px auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
 }
 
 #indepth_resultados {
 	width: 100%;
 	height: 100%;
+}
+
+#indepth_resultados .inner {
+	display: none;
 }
 
 @media screen and (min-width: 2341px) {
@@ -697,17 +727,6 @@
 }
 
 /*** Movil ****/
-@media screen and (max-width:1490px){
-	#indepth_twittear {
-		left: 205px;
-	}
-}
-
-@media screen and (max-width:1180px){
-	#indepth_twittear {
-		left: 75px;
-	}
-}
 
 @media screen and (max-width:1024px) {
 	body{
@@ -778,7 +797,7 @@
 	    margin: auto;
 	}
 	.inner {
-		margin-top: 140px;
+		top: 200px;
 	}
 		
 }
@@ -794,27 +813,20 @@
 	    position: relative;
 	    margin: auto;
 	}
-	
-	#dominos img {
-		width: 75%;
-	}
-
-	#dominos {
-		top: 9px;
-	}
-
 }
 @media screen and (max-width: 573px) {
 	.indepth_respuesta_item {
-	    width: 47%;
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.indepth_result_container {
+		font-size: 19px;
 	}
 }
 
 @media screen and (max-width: 550px) {
-	.indepth_portada {
-		top: -150px;
-	}
-	
 	#content_page1_title {
     width: 95%;
     position: relative;
@@ -862,25 +874,9 @@
 	    width: 97%;
 	    margin-left: 0px;
 	}
-
-	#indepth_twittear {
-		width: 35px;
-		height: 35px;
-		left: 20px;
-		top: 140px;
-	}
 }
 
 @media screen and (max-width: 400px) {
-
-	.indepth_portada {
-		top: -140px;
-	}
-
-	#dominos img {
-    	width: 60%;
-	}
-	
 	.indepth_pronostico_cont{
 		width: 300px;
 		padding: 20px 10px;
@@ -1089,10 +1085,5 @@
 
 	.inner {
 		margin-top: 0px;
-	}
-
-	#indepth_twittear {
-		left: 80px;
-		top: 90px;
 	}
 }

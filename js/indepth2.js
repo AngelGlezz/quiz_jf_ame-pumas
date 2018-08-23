@@ -290,6 +290,8 @@ function finish_test(total){
 	ventana_alto = window.innerHeight ? window.innerHeight : $(window).height();;
 	var ventana_ancho = $(window).width();
 	var img = total;
+
+	$(".inner").show();
 	
 	$("#indepth_resultados").css({
 		"visibility": "visible",
@@ -318,20 +320,22 @@ function finish_test(total){
   	});
 
   	$("#indepth_twittear").click(function(){
-		
   		var text = "";
-		if (total == 0) {
-			text = encodeURIComponent("Eres tan sensible como Buffon con la Juve, ¿También eres portero?");
-		} else if (total == 1) {
-			text = encodeURIComponent("La fiesta y el futbol corre por tu sangre, eres como el niño que nunca dejó el balón");
-		} else if (total == 2) {
-			text = encodeURIComponent("La picardía es lo tuyo, eres como Suárez, ¿No quieres tecnología en el fut?");
-		} else if (total == 3) {
-			text = encodeURIComponent("Nunca pierdes el estilo... y tampoco la arrogancia, eres como CR7");
+		if (total == "america") {
+			text = encodeURIComponent("¡Tu corazón está pintado bicolor! Sólo existe América y ya. Pero no me asaltes, plis. Tengo una familia que alimentar");
+		} else if (total == "neutro") {
+			text = encodeURIComponent("Sí, muy cool, no le vas ni a Pumas ni América… ¿¡entonces qué hacías contestando esto!? Sal y consíguete una relación, un free o algo");
+		} else if (total == "pumas") {
+			text = encodeURIComponent("¡Por tus venas corre la sangre azul y oro! Puede que no te bañes seguido, pero nunca se había visto tanta fidelidad por un equipo desde que Pablo Barrera festejara besando el escudo de todos sus equipos");
 		}
 		
-		var url = encodeURIComponent("http://juanfutbol.com/indepth/que-tipo-de-hombre-eres");
-		window.open("https://twitter.com/share?text="+text+"&hashtags=JFTecate&url="+url,"","width=500, height=300");
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/quiz-america-pumas");
+		window.open("https://twitter.com/share?text="+text+"&hashtags=JFQuiz&url="+url,"","width=500, height=300");
+	});
+
+	$("#indepth_facebook").click(function(){
+		var url = encodeURIComponent("http://juanfutbol.com/indepth/quiz-america-pumas?m="+total);
+		window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
 	});
 }
 
